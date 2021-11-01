@@ -23,10 +23,10 @@ public class ContactAndOppotrtunityAndAccountDTO {
     private Truck product;
     private Integer quantity;
     private Long decisionMaker;
-    private Long accountId;
 
     // ContactDTO and OpportunityDTO shared data
     private Long salesRepId;
+    private Long accountId;
 
     // AccountDTO data
     private Long id;

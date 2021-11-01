@@ -33,7 +33,8 @@ public class CreateController {
     //            "phoneNumber":"123456789",
     //            "email":"email@domain.com",
     //            "companyName":"Company Name",
-    //            "salesRepId":"3"
+    //            "salesRepId":"3",
+    //            "accountId":"3"
     //    }
     @PostMapping("/contact")
     @ResponseStatus(HttpStatus.CREATED)
@@ -127,7 +128,8 @@ public class CreateController {
                 contactAndOpportunityDTO.getPhoneNumber(),
                 contactAndOpportunityDTO.getEmail(),
                 contactAndOpportunityDTO.getCompanyName(),
-                contactAndOpportunityDTO.getSalesRepId()
+                contactAndOpportunityDTO.getSalesRepId(),
+                contactAndOpportunityDTO.getAccountId()
         );
 
         contactServiceProxy.store(contactDTO);
@@ -172,7 +174,8 @@ public class CreateController {
                 contactAndOppotrtunityAndAccountDTO.getPhoneNumber(),
                 contactAndOppotrtunityAndAccountDTO.getEmail(),
                 contactAndOppotrtunityAndAccountDTO.getCompanyName(),
-                contactAndOppotrtunityAndAccountDTO.getSalesRepId()
+                contactAndOppotrtunityAndAccountDTO.getSalesRepId(),
+                contactAndOppotrtunityAndAccountDTO.getAccountId()
         );
 
         contactServiceProxy.store(contactDTO);
